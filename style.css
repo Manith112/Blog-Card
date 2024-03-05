@@ -21,14 +21,16 @@ body{
     flex-direction: column;
 }
 .container{
+    
     padding: 15px;
     border-radius: 10px;
     background-color: var(--White);
     border: 1px solid var(--Black);
-    width: 27%;
+    width: 400px;
     box-shadow: 26px 20px 3px -3px var(--Black);
 }
 .image{
+    width: 100%;
     border-radius: 10px;
     animation: popUp 2s ease forwards;
 }
@@ -43,13 +45,17 @@ body{
     }
 }
 .learn{
-    padding: 5px 10px;
+    padding: 5px 10px ;
     border-radius: 5px;
-    color: var(--Black);
+    
     background-color: var(--Yellow);
-    width: 25%;
-    margin: 15px 0;
+    width: 90px;
+    margin: 15px 0px;
+    
+}
+.learn > p{
     font-weight: 800;
+    color: var(--Black);
 }
 
 .publish{
@@ -84,4 +90,17 @@ body{
 }
 .attribution{
     padding-top: 30px;
+}
+@media screen and (max-width: 460px){
+    .container{
+        width: auto;
+        margin: auto 30px;
+    }
+    .container > h1{
+        font-size: 1.3em;
+       
+    }
+    .detail{
+        font-size: 0.9em;
+    }
 }
